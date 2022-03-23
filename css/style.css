@@ -467,12 +467,13 @@ a.text-primary:hover {
   transition: opacity .35s, visibility .35s, height .4s;
   opacity: 0;
   background: rgba(0, 0, 0, 0.98);
+  /* background-color: rgb(187, 187, 187); */
 }
 
 .overlay .search-form {
   position: relative;
   height: 100%;
-  padding-top: 300px;
+  padding-top: 100px;
 }
 
 .overlay .search-form input {
@@ -481,6 +482,26 @@ a.text-primary:hover {
   color: #fff;
   border: none;
   background: transparent;
+}
+
+.search-wrap .search-list-wrapper {
+  max-height: 360px;
+  min-height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.search-wrap .search-list-wrapper .image img {
+  max-height: 8.5vw;
+  min-height: 8.5vw;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.search-list-wrapper li:hover {
+  background-color: aliceblue;
+  transition: all 0.5s;
 }
 
 .search_toggle {
@@ -2597,6 +2618,18 @@ section#checkout .checkout-wrapper {
 }
 
 /* Checkout  Ends*/
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF6A00;
+}
+
+/* Handle on hover */
 /* Responsive Start */
 @media (max-width: 1080px) {
   #countdown ul li {

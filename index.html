@@ -46,8 +46,19 @@
 							Pages.
 						</a>
 						<ul class="dropdown-menu p-0" aria-labelledby="navbarDropdown4">
-							<li class="dropdown-custom-right"> <a>
+							<li class="dropdown-custom-right position-relative"> <a>
 									Categories
+								</a>
+								<ul class="custom-dropdown bg-light">
+									<li><a href="">Categories 1</a></li>
+									<li><a href="">Categories 2</a></li>
+									<li><a href="">Categories 3</a></li>
+									<li><a href="">Categories 4</a></li>
+									<li><a href="">Categories 5</a></li>
+								</ul>
+							</li>
+							<li class="dropdown-custom-right position-relative"> <a>
+									Categories 2
 								</a>
 								<ul class="custom-dropdown bg-light">
 									<li><a href="">Categories 1</a></li>
@@ -95,6 +106,7 @@
 				<li class="list-inline-item">
 					<a href="#" class="search_toggle" id="search-icon"><i class="tf-ion-android-search"></i></a>
 				</li>
+
 				<li class="dropdown cart-nav dropdown-slide list-inline-item">
 					<a href="#" class="dropdown-toggle cart-icon" data-toggle="dropdown" data-hover="dropdown">
 						<i class="tf-ion-android-cart"></i>
@@ -138,7 +150,15 @@
 						</div>
 					</div>
 				</li>
-				<li class="list-inline-item"><a href="#"><i class="tf-ion-ios-person mr-3"></i></a></li>
+				<li class="dropdown cart-nav dropdown-slide list-inline-item">
+					<a href="#" class="dropdown-toggle cart-icon" data-toggle="dropdown" data-hover="dropdown">
+						<i class="tf-ion-ios-person mr-3"></i></a>
+					<ul class="dropdown-menu cart-dropdown p-2">
+						<li><a href="login.html">Login</a></li>
+						<li><a href="signup.html">Sign Up</a></li>
+					</ul>
+				</li>
+
 			</ul>
 		</div>
 	</nav>
@@ -156,7 +176,56 @@
 								<img class="search-close" src="images/close.png" alt="">
 							</div>
 						</div>
+						<div class="col-12 mt-3 bg-white pt-3">
+
+							<ul class="search-list-wrapper w-100 pl-0">
+								<li class="mb-2 p-1">
+									<a href="product-detail.html">
+										<div class="row">
+											<div class="col-2">
+												<div class="image"> <img
+														src="http://127.0.0.1:5500/images/shop/products/222.jpg	"
+														alt="search-list-image" class="img-fluid"></div>
+											</div>
+											<div class="col-10 m-auto">
+												<p class="m-0">Ham Cheese Burger</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="mb-2 p-1">
+									<a href="product-detail.html">
+										<div class="row">
+											<div class="col-2">
+												<div class="image"> <img
+														src="http://127.0.0.1:5500/images/shop/products/222.jpg	"
+														alt="search-list-image" class="img-fluid"></div>
+											</div>
+											<div class="col-10 m-auto">
+												<p class="m-0">Ham Cheese Burger</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="mb-2 p-1">
+									<a href="product-detail.html">
+										<div class="row">
+											<div class="col-2">
+												<div class="image"> <img
+														src="http://127.0.0.1:5500/images/shop/products/222.jpg	"
+														alt="search-list-image" class="img-fluid"></div>
+											</div>
+											<div class="col-10 m-auto">
+												<p class="m-0">Ham Cheese Burger</p>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+
+						</div>
 					</div>
+
 				</div>
 			</form>
 		</div>
