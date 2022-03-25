@@ -2630,6 +2630,272 @@ section#checkout .checkout-wrapper {
 }
 
 /* Handle on hover */
+/* Css Modified */
+section#order_list_top .img_order_list img {
+  width: 30px;
+}
+
+section#order_list_top .img_order_list h6 {
+  font-weight: 600;
+  color: #000000bf;
+  padding-top: 6px;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+h6.active-item {
+  color: #FF6A00 !important;
+}
+
+/* Shipping */
+#cart_user #shipping input.radio {
+  width: 26px;
+  text-align: center;
+  height: 36px;
+  position: absolute;
+  right: 5%;
+}
+
+#cart_user span.plan-details span {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Shipping Ends */
+/* Delivery  */
+#cart_user .shipping_radio.custom-radio {
+  position: relative;
+}
+
+#cart_user label.shipping_radio-label {
+  padding: 17px 20px;
+  display: block;
+  background: #f3f3f3;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+#cart_user input#defaultUnchecked {
+  position: absolute;
+  top: 54%;
+  left: 4%;
+  transform: translate(5%, -60%);
+}
+
+#cart_user .delivery_info_img img {
+  width: 100px;
+}
+
+#cart_user .title_delivery {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 7px;
+}
+
+#cart_user input#defaultUnchecke {
+  position: absolute;
+  top: 52%;
+  left: 5%;
+  transform: translate(-4%, -50%);
+}
+
+/*************************** search select start  */
+#cart_user .main_delivery_info {
+  height: 250px;
+}
+
+@media(max-width:34em) {
+  .main_delivery_info {
+    min-width: 150px;
+    width: auto;
+  }
+}
+
+#cart_user #select_box {
+  display: none !important;
+}
+
+#cart_user .dropdown-select {
+  background-color: #fff;
+  border-radius: 6px;
+  border: solid 1px #eee;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: auto;
+}
+
+#cart_user .dropdown-select:focus {
+  background-color: #fff;
+}
+
+#cart_user .dropdown-select:hover {
+  background-color: #fff;
+}
+
+#cart_user .dropdown-select:active,
+#cart_user .dropdown-select.open {
+  background-color: #fff !important;
+  border-color: #bbb;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) inset;
+}
+
+#cart_user .dropdown-select:after {
+  height: 0;
+  width: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #777;
+  -webkit-transform: origin(50% 20%);
+  transform: origin(50% 20%);
+  transition: all 0.125s ease-in-out;
+  content: '';
+  display: block;
+  margin-top: -2px;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+#cart_user .dropdown-select.open:after {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+#cart_user .dropdown-select.open .list {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#cart_user .dropdown-select.open .option {
+  cursor: pointer;
+}
+
+#cart_user .dropdown-select.wide {
+  width: 100%;
+}
+
+#cart_user .dropdown-select.wide .list {
+  left: 0 !important;
+  right: 0 !important;
+}
+
+#cart_user .dropdown-select .list {
+  box-sizing: border-box;
+  transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+  -webkit-transform: scale(0.75);
+  transform: scale(0.75);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.09);
+  background-color: #fff;
+  border-radius: 6px;
+  margin-top: 4px;
+  padding: 3px 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  max-height: 250px;
+  overflow: auto;
+  border: 1px solid #ddd;
+}
+
+#cart_user .dropdown-select .list:hover .option:not(:hover) {
+  background-color: transparent !important;
+}
+
+#cart_user .dropdown-select .dd-search {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-top: 4px;
+}
+
+#cart_user .dropdown-select .dd-searchbox {
+  width: 90%;
+  padding: 0.5rem;
+  border: 1px solid #999;
+  border-color: #999;
+  border-radius: 4px;
+  outline: none;
+  height: 40px;
+}
+
+#cart_user .dropdown-select .dd-searchbox:focus {
+  border-color: #12CBC4;
+}
+
+#cart_user .dropdown-select .list ul {
+  padding: 0;
+}
+
+#cart_user .dropdown-select .option {
+  cursor: default;
+  font-weight: 400;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 29px;
+  text-align: left;
+  transition: all 0.2s;
+  list-style: none;
+}
+
+#cart_user .dropdown-select .option:hover,
+#cart_user .dropdown-select .option:focus {
+  background-color: #f6f6f6 !important;
+}
+
+#cart_user .dropdown-select .option.selected {
+  font-weight: 600;
+  color: #12cbc4;
+}
+
+#cart_user .dropdown-select .option.selected:focus {
+  background: #f6f6f6;
+}
+
+#cart_user .dropdown-select a {
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+#cart_user .dropdown-select a:hover {
+  color: #666;
+}
+
+/*********************************** search select end  */
+/* Delivery Ends */
+#order_list_top {
+  background-color: #f9f9f9;
+}
+
+/* Css Modified Ends */
 /* Responsive Start */
 @media (max-width: 1080px) {
   #countdown ul li {
